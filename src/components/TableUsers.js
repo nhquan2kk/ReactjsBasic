@@ -26,7 +26,7 @@ const TableUsers = (props) => {
 
     const handlePageClick = (event) => {
         console.log("check event: ", event)
-        getUsers(event.selected == 1);
+        getUsers(+event.selected + 1);
     }
 
     return (<>
